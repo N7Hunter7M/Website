@@ -6,70 +6,81 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+    <link rel="stylesheet" href="slider/slider.css">
+    <link rel="stylesheet" href="languge/styles.css">
+    <!-- serching -->
+    <link rel="stylesheet" href="searching/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- serching -->
+
+    <!-- time banner css -->
+    <link rel="stylesheet" href="banner_time/styles.css">
+    <!-- time banner css -->
+
 </head>
 <body>
+    <!-- header section -->
     <section id="header">
-        <a href="#"><img src="img/main_logo.png" class="logo" alt=""></a>  <!-- LOGO IMAGE  -->
+        <a href="#"><img src="main_logo.png" class="logo" alt=""></a>  <!-- LOGO IMAGE  -->
+
+        <!-- searching -->
+        <div class="search">
+            <span class="search-icon material-symbols-outlined">search</span>
+            <input class="search-input" type="search" placeholder="Search...">
+        </div>
+        <!-- searching -->
+
 
         <div>
             <ul id="navbar">
                 <li><a class="active" href="index.htm">Favorits</a></li>
-                <li><a href="">Catregories</a></li>
-                <li><a href="">Design your outfit</a></li>
-                <li><a href="">Language</a></li>
-                <li><a href="responsive_login/index.html" class="login">login</a></li>
+                <li><a href="categories.html">Catregories</a></li>
+                <li><a href="#">Design your outfit</a></li>
+                <li class="login-inburger"><a href="login/login.html">login</a></li>
+                <li  class="login-inburger"><a href="account.html">your account</a></li>
+                <!--Language -->
+                <div class="language-bar">
+                    <div class="selected-language">
+                        <img src="https://flagcdn.com/w20/us.png" alt="English">ENG
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropdown-content">
+                            <a href="#" data-lang="en"><img src="https://flagcdn.com/w20/us.png" alt="ENG">ENG</a>
+                            <a href="#" data-lang="fr"><img src="https://flagcdn.com/w20/ru.png" alt="RU">RU</a>
+                            <a href="#" data-lang="es"><img src="https://flagcdn.com/w20/uz.png" alt="UZB">UZB</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Language -->
+
+                <li><a href="login/login.html" class="login">login</a></li>
                 <a href="#" id="close"><i class="far fa-times"></i></a>
             </ul>
         </div>
+        <!--Language -->
+        <script src="languge/script.js"></script>
+        <!--Language -->
 
+        <!-- mobile section -->
         <div id="mobile">
-            <a href="responsive_login/index.html">login</a>
+            <!-- <a href="responsive_login/index.html">login</a> -->
             <i id="bar" class="fas fa-outdent"></i>
         </div>
+        <!-- mobile section -->
 
     </section>
+     <!-- header section ENDS -->
 
-    <section id="hero">
-        <h4>Trade in offer</h4>
-        <h2>Super value deals</h2>
-        <h1>On all products</h1>
-        <p>Save more with coupons & up to 70% off!</p>
-        <button>Shop Now</button>
-    </section>
-
-    <!-- Feature -->
-    <section id="feature" class="section-p1">
-        <div class="fe-box">
-            <img src="img/features/f1.png" alt="">
-            <h6>Free shipping</h6>
+     <!-- discount splider -->
+     <div class="slider">
+        <div class="slides">
+            <img src="slider/image1.png" alt="Image 1">
+            <img src="slider/image2.png" alt="Image 2">
+            <img src="slider/image3.png" alt="Image 3">
         </div>
-
-        <div class="fe-box">
-            <img src="img/features/f2.png" alt="">
-            <h6>Online oreder</h6>
-        </div>
-
-        <div class="fe-box">
-            <img src="img/features/f3.png" alt="">
-            <h6>Save money</h6>
-        </div>
-
-        <div class="fe-box">
-            <img src="img/features/f4.png" alt="">
-            <h6>Promotion</h6>
-        </div>
-
-        <div class="fe-box">
-            <img src="img/features/f5.png" alt="">
-            <h6>Happy sell</h6>
-        </div>
-
-        <div class="fe-box">
-            <img src="img/features/f6.png" alt="">
-            <h6>F24/7 Support</h6>
-        </div>
-
-    </section>
+    </div>
+    <script src="slider/slider.js"></script>
+    <!-- discount splider -->
 
 
     <!-- Feature Product-->
@@ -215,52 +226,20 @@
         </div>
 
     </section>
+    <!-- Feature Product ENDS-->
 
-    <section id="sm-banner" class="section-m1">
-        <div class="banner-box">
-            <h4>crazy deals</h4>
-            <h2>buy 1 get 1 free</h2>
-            <span>the best class is on sale at caro</span>
-            <button class="white">Learn More</button>
-        </div>
 
-        <div class="banner-box banner-box2">
-            <h4>spring/summer</h4>
-            <h2>upcoming season</h2>
-            <span>the best class is on sale at caro</span>
-            <button class="white">Collection</button>
+    <!-- time banner -->
+    <section id="n7">
+        <div class="banner">
+            <div id="time"></div>
         </div>
     </section>
 
-    <section id="banner3">
-        <div class="banner-box">
-            <h2>SEOSANAL SALE</h2>
-            <h3>Winter Collection -50% OFF</h3>
-        </div>
-
-        <div class="banner-box b1">
-            <h2>NEW FOOTWEAR COLLECTION</h2>
-            <h3>Spring/Summer 2025</h3>
-        </div>
-
-        <div class="banner-box b2">
-            <h2>T-SHIRTS</h2>
-            <h3>New Trendy Print</h3>
-        </div>
-    </section>
-
-    <section id="newsletter" class="mar">
-        <div class="newstext">
-            <h4>Sign Up For Newsletters</h4>
-            <p>Get E-mail updates about our latest shop and <span>special offers</span></p>
-        </div>
-
-        <div class="form">
-            <input type="text" placeholder="Your email address">
-            <button class="normal">Sign Up</button>
-        </div>
-    </section>
-
+    <script src="banner_time/script.js"></script>
+    <!-- time banner ENDS -->
+    
+    <!-- FOOTER SECTION -->
     <footer class="section-p1">
         <div class="col1">
             <img class="logo" src="img/logo.png" alt="">
@@ -313,6 +292,8 @@
             <p>&copy; 2024, <span>N7Hunter7M</span> - HTHL CSS Eccomerce Template</p>
         </div>
     </footer>
+    <!-- FOOTER SECTION ENDS-->
+
     <script src="script.js"></script>
 </body>
 </html>

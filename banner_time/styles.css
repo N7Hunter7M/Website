@@ -1,0 +1,41 @@
+#n7 .banner {
+    background-image: url('banner.png'); /* Replace 'your-image.jpg' with your image file */
+    background-size: 100% 100%; /* Force the image to exactly match the banner size */
+    background-position: center; /* Center the image in the banner */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    width: 100%;
+    height: 37vw; /* Adjust as needed */
+    border: 25px solid white; /* White border similar to the image style */
+    border-radius: 45px; /* Rounded corners similar to the image style */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 24px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#time {
+    font-size: 18px;
+    position: absolute; /* Position the timer absolutely within the banner */
+    right: 20px; /* Distance from the right edge of the banner */
+    bottom: 20px; /* Distance from the bottom edge of the banner */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background to improve readability */
+    padding: 5px 10px; /* Optional: Add padding around the timer text */
+    border-radius: 5px; /* Optional: Add rounded corners to the timer box */
+}
+
+@media (max-width: 600px) {
+    #time {
+        font-size: 8px;
+        position: absolute; /* Position the timer absolutely within the banner */
+        right: 10px; /* Distance from the right edge of the banner */
+        bottom: 10px; /* Distance from the bottom edge of the banner */
+        background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background to improve readability */
+        padding: 2px 5px; /* Optional: Add padding around the timer text */
+        border-radius: 5px; /* Optional: Add rounded corners to the timer box */
+    }
+}

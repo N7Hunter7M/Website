@@ -1,0 +1,95 @@
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+} */
+
+.profile-container {
+    max-width: 100 vw;
+    margin: 20px auto;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;;
+    background-color: #7B68EE;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.profile-pic {
+    flex-shrink: 0; /* Prevents the image from shrinking */
+}
+
+.profile-info {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.profile-pic img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+.profile-info h2 {
+    margin: 10px 0 5px;
+    font-size: 22px;
+}
+
+.profile-info p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.profile-options ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-options li {
+    border-bottom: 1px solid #ccc;
+}
+.profile-options ul li {
+    position: relative; /* Set relative position to control child elements */
+    margin-bottom: 10px; /* Space between list items */
+}
+
+.profile-options ul li p {
+    position: absolute; /* Position the notification badge absolutely */
+    top: 50%;
+    right: 0; /* Place it on the right side of the list item */
+    transform: translateY(-100%); /* Center it vertically */
+    background-color: red; /* Background color of the notification badge */
+    color: white; /* Text color inside the badge */
+    border-radius: 50%; /* Make it circular */
+    width: 20px; /* Width of the badge */
+    height: 20px; /* Height of the badge */
+    text-align: center; /* Center the number inside the badge */
+    font-size: 12px; /* Font size of the number */
+    line-height: 20px; /* Align the text vertically within the badge */
+}
+
+.profile-options ul li p:empty {
+    display: none; /* Hide the badge if there's no content */
+}
+
+.profile-options a {
+    display: block;
+    padding: 15px;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.profile-options a:hover {
+    background-color: #f9f9f9;
+}

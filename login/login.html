@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup/Forgot Password</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="form-container">
+            <!-- Login Form -->
+            <form id="login-form" class="form active">
+                <h2>Login</h2>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+                <p><a href="#" onclick="switchForm('forgot-password')">Forgot Password?</a></p>
+                <p>Don't have an account? <a href="#" onclick="switchForm('signup')">Sign up</a></p>
+            </form>
+
+            <!-- Signup Form -->
+            <form id="signup-form" class="form">
+                <h2>Sign Up</h2>
+                <input type="text" placeholder="Username" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+                <p>Already have an account? <a href="#" onclick="switchForm('login')">Login</a></p>
+            </form>
+
+            <!-- Forgot Password Form -->
+            <form id="forgot-password-form" class="form">
+                <h2>Forgot Password</h2>
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Submit</button>
+                <p>Remembered? <a href="#" onclick="switchForm('login')">Login</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

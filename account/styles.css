@@ -67,7 +67,7 @@
     position: absolute; /* Position the notification badge absolutely */
     top: 50%;
     right: 0; /* Place it on the right side of the list item */
-    transform: translateY(-100%); /* Center it vertically */
+    transform: translateY(-140%); /* Center it vertically */
     background-color: red; /* Background color of the notification badge */
     color: white; /* Text color inside the badge */
     border-radius: 50%; /* Make it circular */
@@ -76,6 +76,8 @@
     text-align: center; /* Center the number inside the badge */
     font-size: 12px; /* Font size of the number */
     line-height: 20px; /* Align the text vertically within the badge */
+    margin-right: 20px;
+    padding: 0;
 }
 
 .profile-options ul li p:empty {
